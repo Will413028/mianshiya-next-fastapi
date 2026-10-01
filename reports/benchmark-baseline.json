@@ -1,0 +1,208 @@
+{
+  "scope": "real API/PG/Redis/ES; ASGI transport excludes Next/network latency",
+  "host": {
+    "machine": "arm64",
+    "cpu": 8,
+    "python": "3.13.13"
+  },
+  "fixture": {
+    "users": 1000,
+    "banks": 100,
+    "questions": 10000,
+    "relations": 10000,
+    "sha256": "2c035e2e6868cd86c908cc4d8f16b5dce99bf375e670a111ec8fbd27657252ab",
+    "rebuild": {
+      "index": "mianshiya-benchmark-questions-4303d69bd8514afdb36f94b4bfbd8038",
+      "documents": 10000
+    }
+  },
+  "runs": [
+    {
+      "mode": "cold",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 1728,
+          "p50_ms": 92.21,
+          "p95_ms": 461.62
+        },
+        "bank": {
+          "requests": 1726,
+          "p50_ms": 89.83,
+          "p95_ms": 425.48
+        },
+        "search": {
+          "requests": 1722,
+          "p50_ms": 115.06,
+          "p95_ms": 544.66
+        }
+      },
+      "cache": {
+        "redis_hits": 0,
+        "local_hits": 0,
+        "db_reads": 1726,
+        "misses": 1726
+      }
+    },
+    {
+      "mode": "cold",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 1543,
+          "p50_ms": 70.84,
+          "p95_ms": 798.35
+        },
+        "bank": {
+          "requests": 1539,
+          "p50_ms": 70.14,
+          "p95_ms": 684.54
+        },
+        "search": {
+          "requests": 1543,
+          "p50_ms": 80.46,
+          "p95_ms": 725.1
+        }
+      },
+      "cache": {
+        "redis_hits": 0,
+        "local_hits": 0,
+        "db_reads": 3265,
+        "misses": 3265
+      }
+    },
+    {
+      "mode": "cold",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 560,
+          "p50_ms": 481.75,
+          "p95_ms": 1124.11
+        },
+        "bank": {
+          "requests": 561,
+          "p50_ms": 447.25,
+          "p95_ms": 1307.68
+        },
+        "search": {
+          "requests": 560,
+          "p50_ms": 472.73,
+          "p95_ms": 1345.75
+        }
+      },
+      "cache": {
+        "redis_hits": 0,
+        "local_hits": 0,
+        "db_reads": 3826,
+        "misses": 3826
+      }
+    },
+    {
+      "mode": "hot",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 580,
+          "p50_ms": 391.47,
+          "p95_ms": 1763.37
+        },
+        "bank": {
+          "requests": 583,
+          "p50_ms": 291.17,
+          "p95_ms": 1655.0
+        },
+        "search": {
+          "requests": 582,
+          "p50_ms": 411.65,
+          "p95_ms": 1623.67
+        }
+      },
+      "cache": {
+        "redis_hits": 81,
+        "local_hits": 475,
+        "db_reads": 3853,
+        "misses": 3853
+      }
+    },
+    {
+      "mode": "hot",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 773,
+          "p50_ms": 184.15,
+          "p95_ms": 1548.23
+        },
+        "bank": {
+          "requests": 764,
+          "p50_ms": 166.63,
+          "p95_ms": 1267.46
+        },
+        "search": {
+          "requests": 767,
+          "p50_ms": 253.06,
+          "p95_ms": 1565.77
+        }
+      },
+      "cache": {
+        "redis_hits": 161,
+        "local_hits": 1123,
+        "db_reads": 3889,
+        "misses": 3889
+      }
+    },
+    {
+      "mode": "hot",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 301,
+          "p50_ms": 714.72,
+          "p95_ms": 2796.92
+        },
+        "bank": {
+          "requests": 307,
+          "p50_ms": 621.71,
+          "p95_ms": 3399.87
+        },
+        "search": {
+          "requests": 301,
+          "p50_ms": 948.72,
+          "p95_ms": 3137.5
+        }
+      },
+      "cache": {
+        "redis_hits": 218,
+        "local_hits": 1342,
+        "db_reads": 3920,
+        "misses": 3920
+      }
+    }
+  ],
+  "pool": {
+    "configured_size": 5,
+    "max_overflow": 5,
+    "peak_checked_out": 10,
+    "connections_created": 3062
+  },
+  "passed": false
+}

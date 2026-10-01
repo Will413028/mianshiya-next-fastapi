@@ -1,0 +1,13 @@
+{
+  "scope": "two real uvicorn processes sharing real PostgreSQL and Redis",
+  "checks": {
+    "cross_process_registration_unique": true,
+    "cross_process_ban_revokes_session": true,
+    "cross_process_atomic_rate_budget": true,
+    "cross_process_dynamic_ip_policy": true,
+    "wire_forwarded_headers_cannot_spoof_peer": true,
+    "restarted_instance_reloads_persisted_ip_policy": true
+  },
+  "passed": true,
+  "postgresql_version": "180006"
+}

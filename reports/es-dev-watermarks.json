@@ -1,0 +1,1 @@
+{"acknowledged":true,"persistent":{"cluster":{"routing":{"allocation":{"disk":{"watermark":{"low":"8gb","flood_stage":"2gb","high":"5gb"}}}}}},"transient":{}}

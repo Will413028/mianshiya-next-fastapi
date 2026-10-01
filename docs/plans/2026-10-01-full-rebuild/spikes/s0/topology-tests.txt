@@ -1,0 +1,7 @@
+FFFF                                                                     [100%]
+=========================== short test summary info ============================
+FAILED .projects/personal/mianshiya-next-fastapi/docs/plans/2026-10-01-full-rebuild/spikes/s0/test_spike.py::test_ssr_cookie_forwarding
+FAILED .projects/personal/mianshiya-next-fastapi/docs/plans/2026-10-01-full-rebuild/spikes/s0/test_spike.py::test_identity_and_anonymous_cache_isolation
+FAILED .projects/personal/mianshiya-next-fastapi/docs/plans/2026-10-01-full-rebuild/spikes/s0/test_spike.py::test_proxy_cookie_attributes_revocation_and_csrf
+FAILED .projects/personal/mianshiya-next-fastapi/docs/plans/2026-10-01-full-rebuild/spikes/s0/test_spike.py::test_openapi_id_is_string_and_unknown_fields_rejected
+4 failed, 3 deselected in 21.69s

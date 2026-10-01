@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="19" time="83.608" timestamp="2026-10-01T22:55:00.410954+08:00" hostname="Wills-MacBook-Pro-2.local"><testcase classname="tests.test_product" name="test_registration_database_unique_and_password" time="1.592" /><testcase classname="tests.test_product" name="test_auth_csrf_revocation_device_and_unknown_fields" time="1.991" /><testcase classname="tests.test_product" name="test_crud_relations_atomic_batch_and_deletion" time="4.040" /><testcase classname="tests.test_product" name="test_owner_isolation_and_public_profile" time="3.060" /><testcase classname="tests.test_product" name="test_bitmap_timezone_leapday_and_idempotence" time="2.610" /><testcase classname="tests.test_product" name="test_interview_owner_state_idempotence_and_concurrency" time="3.973" /><testcase classname="tests.test_product" name="test_generation_wrong_count_writes_nothing_then_retry" time="1.419" /><testcase classname="tests.test_product" name="test_dynamic_policies_bloom_and_revocation" time="1.221" /><testcase classname="tests.test_edges" name="test_navigation_crosses_page_boundary_and_excludes_unpublished" time="2.131" /><testcase classname="tests.test_edges" name="test_cached_bank_obeys_sql_version_and_immediate_deletion" time="3.816" /><testcase classname="tests.test_edges" name="test_redis_outage_fails_auth_closed_with_sanitized_problem" time="2.236" /><testcase classname="tests.test_edges" name="test_cross_origin_mutations_are_rejected" time="1.677" /><testcase classname="tests.test_edges" name="test_admin_user_profile_crud_keeps_private_fields" time="4.515" /><testcase classname="tests.test_edges" name="test_deleted_interview_cannot_be_resurrected_by_pending_provider" time="2.260" /><testcase classname="tests.test_edges" name="test_history_and_context_limits_reserve_end_and_preserve_messages" time="8.830" /><testcase classname="tests.test_queries" name="test_query_filters_sort_and_unknown_parameters" time="9.428" /><testcase classname="tests.test_queries" name="test_user_search_privacy_and_interview_owner_filters" time="10.378" /><testcase classname="tests.test_queries" name="test_deleted_author_projection_keeps_content_and_removes_private_profile" time="4.701" /><testcase classname="tests.test_search" name="test_actual_chinese_search_membership_tags_and_tombstone" time="6.688"><failure message="elastic_transport.ConnectionTimeout: Connection timed out">async def test_actual_chinese_search_membership_tags_and_tombstone():
+&gt;       await search.ensure_index()
+
+tests/test_search.py:20:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+mianshiya/search.py:32: in ensure_index
+    if not await es.indices.exists_alias(name=ALIAS):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.13/site-packages/elasticsearch/_async/client/indices.py:1707: in exists_alias
+    return await self.perform_request(  # type: ignore[return-value]
+.venv/lib/python3.13/site-packages/elasticsearch/_async/client/_base.py:432: in perform_request
+    return await self._client.perform_request(
+.venv/lib/python3.13/site-packages/elasticsearch/_async/client/_base.py:274: in perform_request
+    response = await self._perform_request(
+.venv/lib/python3.13/site-packages/elasticsearch/_async/client/_base.py:322: in _perform_request
+    meta, resp_body = await self.transport.perform_request(
+.venv/lib/python3.13/site-packages/elastic_transport/_async_transport.py:293: in perform_request
+    resp = await node.perform_request(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;AiohttpHttpNode(http://127.0.0.1:59200)&gt;, method = 'HEAD'
+target = '/_alias/mianshiya-test-questions', body = None
+headers = {'accept': 'application/vnd.elasticsearch+json; compatible-with=9', 'x-elastic-client-meta': 'es=9.5.1,py=3.13.13,t=9.4.2,ai=3.14.3'}
+request_timeout = 5
+
+    async def perform_request(  # type: ignore[override]
+        self,
+        method: str,
+        target: str,
+        body: Optional[bytes] = None,
+        headers: Optional[HttpHeaders] = None,
+        request_timeout: Union[DefaultType, Optional[float]] = DEFAULT,
+    ) -&gt; NodeApiResponse:
+        if self.session is None:
+            self._create_aiohttp_session()
+        assert self.session is not None
+
+        url = self.base_url + target
+
+        is_head = False
+        # There is a bug in aiohttp&lt;3.7 that disables the re-use
+        # of the connection in the pool when method=HEAD.
+        # See: aio-libs/aiohttp#1769
+        if method == "HEAD" and not _AIOHTTP_FIXED_HEAD_BUG:
+            method = "GET"
+            is_head = True
+
+        # total=0 means no timeout for aiohttp
+        resolved_timeout: Optional[float] = (
+            self.config.request_timeout
+            if request_timeout is DEFAULT
+            else request_timeout
+        )
+        aiohttp_timeout = aiohttp.ClientTimeout(
+            total=resolved_timeout if resolved_timeout is not None else 0
+        )
+
+        request_headers = self._headers.copy()
+        if headers:
+            request_headers.update(headers)
+
+        body_to_send: Optional[bytes]
+        if body:
+            if self._http_compress:
+                body_to_send = gzip.compress(body)
+                request_headers["content-encoding"] = "gzip"
+            else:
+                body_to_send = body
+        else:
+            body_to_send = None
+
+        kwargs: RequestKwarg = {}
+        if self._ssl_assert_fingerprint:
+            kwargs["ssl"] = aiohttp_fingerprint(self._ssl_assert_fingerprint)
+
+        try:
+            start = self._loop.time()
+            async with self.session.request(
+                method,
+                url,
+                data=body_to_send,
+                headers=request_headers,
+                timeout=aiohttp_timeout,
+                **kwargs,
+            ) as response:
+                if is_head:  # We actually called 'GET' so throw away the data.
+                    await response.release()
+                    raw_data = b""
+                else:
+                    raw_data = await response.read()
+                duration = self._loop.time() - start
+
+        # We want to reraise a cancellation or recursion error.
+        except RERAISE_EXCEPTIONS:
+            raise
+        except Exception as e:
+            err: Exception
+            if isinstance(
+                e, (asyncio.TimeoutError, aiohttp_exceptions.ServerTimeoutError)
+            ):
+                err = ConnectionTimeout(
+                    "Connection timed out during request", errors=(e,)
+                )
+            elif isinstance(e, (ssl.SSLError, aiohttp_exceptions.ClientSSLError)):
+                err = TlsError(str(e), errors=(e,))
+            elif isinstance(e, BUILTIN_EXCEPTIONS):
+                raise
+            else:
+                err = ConnectionError(str(e), errors=(e,))
+            self._log_request(
+                method="HEAD" if is_head else method,
+                target=target,
+                headers=request_headers,
+                body=body,
+                exception=err,
+            )
+&gt;           raise err from None
+E           elastic_transport.ConnectionTimeout: Connection timed out
+
+.venv/lib/python3.13/site-packages/elastic_transport/_node/_http_aiohttp.py:230: ConnectionTimeout</failure></testcase></testsuite></testsuites>

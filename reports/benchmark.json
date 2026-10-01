@@ -1,0 +1,274 @@
+{
+  "scope": "real API/PG/Redis/ES; ASGI transport excludes Next/network latency",
+  "host": {
+    "machine": "arm64",
+    "cpu": 8,
+    "python": "3.13.13"
+  },
+  "fixture": {
+    "users": 1000,
+    "banks": 100,
+    "questions": 10000,
+    "relations": 10000,
+    "sha256": "2c035e2e6868cd86c908cc4d8f16b5dce99bf375e670a111ec8fbd27657252ab",
+    "rebuild": {
+      "index": "mianshiya-benchmark-questions-c32c7fbbf14c49bc8bf8d57f3628dd69",
+      "documents": 10000
+    }
+  },
+  "runs": [
+    {
+      "mode": "cold",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 3356,
+          "p50_ms": 33.4,
+          "p95_ms": 143.29
+        },
+        "bank": {
+          "requests": 3359,
+          "p50_ms": 34.08,
+          "p95_ms": 148.72
+        },
+        "search": {
+          "requests": 3361,
+          "p50_ms": 39.13,
+          "p95_ms": 181.5
+        }
+      },
+      "cache": {
+        "redis_hits": 0,
+        "local_hits": 0,
+        "db_reads": 3359,
+        "misses": 3359
+      },
+      "connections_created": 9,
+      "host_load_before": [
+        76.642578125,
+        119.25146484375,
+        104.32080078125
+      ],
+      "host_load_after": [
+        69.7080078125,
+        108.98193359375,
+        101.47119140625
+      ]
+    },
+    {
+      "mode": "cold",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 1874,
+          "p50_ms": 49.76,
+          "p95_ms": 512.3
+        },
+        "bank": {
+          "requests": 1880,
+          "p50_ms": 49.13,
+          "p95_ms": 563.02
+        },
+        "search": {
+          "requests": 1877,
+          "p50_ms": 54.16,
+          "p95_ms": 506.2
+        }
+      },
+      "cache": {
+        "redis_hits": 0,
+        "local_hits": 0,
+        "db_reads": 1880,
+        "misses": 1880
+      },
+      "connections_created": 0,
+      "host_load_before": [
+        69.7080078125,
+        108.98193359375,
+        101.47119140625
+      ],
+      "host_load_after": [
+        119.9814453125,
+        114.970703125,
+        104.138671875
+      ]
+    },
+    {
+      "mode": "cold",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 2130,
+          "p50_ms": 58.84,
+          "p95_ms": 362.46
+        },
+        "bank": {
+          "requests": 2132,
+          "p50_ms": 58.59,
+          "p95_ms": 400.24
+        },
+        "search": {
+          "requests": 2135,
+          "p50_ms": 68.03,
+          "p95_ms": 458.33
+        }
+      },
+      "cache": {
+        "redis_hits": 0,
+        "local_hits": 0,
+        "db_reads": 2132,
+        "misses": 2132
+      },
+      "connections_created": 0,
+      "host_load_before": [
+        119.9814453125,
+        114.970703125,
+        104.138671875
+      ],
+      "host_load_after": [
+        104.4716796875,
+        112.7158203125,
+        104.1123046875
+      ]
+    },
+    {
+      "mode": "hot",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 3409,
+          "p50_ms": 34.01,
+          "p95_ms": 140.13
+        },
+        "bank": {
+          "requests": 3405,
+          "p50_ms": 29.61,
+          "p95_ms": 128.07
+        },
+        "search": {
+          "requests": 3408,
+          "p50_ms": 38.42,
+          "p95_ms": 186.82
+        }
+      },
+      "cache": {
+        "redis_hits": 140,
+        "local_hits": 3230,
+        "db_reads": 35,
+        "misses": 35
+      },
+      "connections_created": 0,
+      "host_load_before": [
+        104.4716796875,
+        112.7158203125,
+        104.1123046875
+      ],
+      "host_load_after": [
+        55.94873046875,
+        97.4580078125,
+        99.00390625
+      ]
+    },
+    {
+      "mode": "hot",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 3058,
+          "p50_ms": 37.33,
+          "p95_ms": 177.32
+        },
+        "bank": {
+          "requests": 3060,
+          "p50_ms": 31.0,
+          "p95_ms": 159.56
+        },
+        "search": {
+          "requests": 3063,
+          "p50_ms": 46.77,
+          "p95_ms": 237.61
+        }
+      },
+      "cache": {
+        "redis_hits": 146,
+        "local_hits": 2863,
+        "db_reads": 51,
+        "misses": 51
+      },
+      "connections_created": 0,
+      "host_load_before": [
+        55.94873046875,
+        97.4580078125,
+        99.00390625
+      ],
+      "host_load_after": [
+        51.94482421875,
+        88.52490234375,
+        95.5439453125
+      ]
+    },
+    {
+      "mode": "hot",
+      "seconds": 60,
+      "concurrency": 20,
+      "think_time_ms": 60,
+      "errors": {},
+      "metrics": {
+        "detail": {
+          "requests": 3835,
+          "p50_ms": 30.2,
+          "p95_ms": 96.21
+        },
+        "bank": {
+          "requests": 3836,
+          "p50_ms": 25.75,
+          "p95_ms": 81.74
+        },
+        "search": {
+          "requests": 3833,
+          "p50_ms": 34.1,
+          "p95_ms": 101.12
+        }
+      },
+      "cache": {
+        "redis_hits": 128,
+        "local_hits": 3667,
+        "db_reads": 41,
+        "misses": 41
+      },
+      "connections_created": 0,
+      "host_load_before": [
+        51.94482421875,
+        88.52490234375,
+        95.5439453125
+      ],
+      "host_load_after": [
+        70.6357421875,
+        86.23974609375,
+        94.14697265625
+      ]
+    }
+  ],
+  "pool": {
+    "configured_size": 10,
+    "max_overflow": 0,
+    "peak_checked_out": 10,
+    "connections_created": 10
+  },
+  "passed": false
+}

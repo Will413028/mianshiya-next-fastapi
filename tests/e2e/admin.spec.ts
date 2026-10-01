@@ -1,0 +1,66 @@
+import { expect, test } from "@playwright/test";
+import { randomUUID } from "node:crypto";
+import { execFile } from "node:child_process";
+import { resolve } from "node:path";
+import { promisify } from "node:util";
+
+test("管理員題庫／題目 CRUD、批次關聯、公開題解及 Markdown 安全", async ({ page }) => {
+  const suffix = randomUUID().slice(0, 8);
+  const account = "admin-browser-" + suffix;
+  const root = resolve(process.cwd(), "../..");
+  await page.goto("/user/register");
+  await page.getByLabel("帳號", { exact: true }).fill(account);
+  await page.getByLabel("密碼", { exact: true }).fill("browser-example-password");
+  await page.getByLabel("再次輸入密碼").fill("browser-example-password");
+  await page.getByRole("button", { name: "註冊並開始學習" }).click();
+  await expect(page.getByRole("heading", { name: /的學習空間/ })).toBeVisible();
+  await promisify(execFile)("uv", ["run", "--frozen", "python", "-m", "mianshiya.cli", "promote", account], { cwd: resolve(root, "apps/api") });
+
+  const bankTitle = "瀏覽器題庫 " + suffix;
+  await page.goto("/admin/questionBank");
+  await expect(page.getByRole("heading", { name: "題庫管理", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "＋ 新增", exact: true }).click();
+  await page.getByLabel("題庫名稱", { exact: true }).fill(bankTitle);
+  await page.getByLabel("介紹", { exact: true }).fill("由管理員流程建立");
+  await page.getByRole("button", { name: "保存", exact: true }).click();
+  let bankRow = page.getByRole("row").filter({ hasText: bankTitle });
+  await expect(bankRow).toBeVisible();
+  const bankId = (await bankRow.locator("td").first().textContent())!.trim();
+  await bankRow.getByRole("button", { name: "編輯", exact: true }).click();
+  await page.getByLabel("題庫名稱", { exact: true }).fill(bankTitle + " 更新");
+  await page.getByRole("button", { name: "保存", exact: true }).click();
+  await expect(page.getByRole("row").filter({ hasText: bankTitle + " 更新" })).toBeVisible();
+
+  const questionTitle = "瀏覽器題目 " + suffix;
+  await page.goto("/admin/question");
+  await page.getByRole("button", { name: "＋ 新增", exact: true }).click();
+  await page.getByLabel("題目標題", { exact: true }).fill(questionTitle);
+  await page.getByLabel("題目內容", { exact: true }).fill('交易問題\n\n<img src=x onerror="window.__markdownXss=1">\n\n[危險連結](javascript:alert(1))');
+  await page.getByLabel("題解", { exact: true }).fill("**交易**與約束\n\n```sql\nSELECT 1;\n```");
+  await page.getByLabel("標籤（逗號分隔）", { exact: true }).fill("browser,security");
+  await page.getByRole("button", { name: "保存", exact: true }).click();
+  const questionRow = page.getByRole("row").filter({ hasText: questionTitle });
+  await expect(questionRow).toBeVisible();
+  const questionId = (await questionRow.locator("td").nth(1).textContent())!.trim();
+  await page.getByLabel("選取題目 " + questionId, { exact: true }).check();
+  await page.getByLabel("批次題庫 ID", { exact: true }).fill(bankId);
+  await page.getByRole("button", { name: "加入題庫", exact: true }).click();
+  await expect(page.getByRole("status")).toContainText('"inserted":1');
+  await page.goto(`/bank/${bankId}/question/${questionId}`);
+  await expect(page.getByRole("heading", { name: questionTitle, exact: true })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "題庫題目導覽" }).getByRole("link", { name: questionTitle, exact: true })).toBeVisible();
+  expect(await page.evaluate(() => (window as Window & { __markdownXss?: number }).__markdownXss)).toBeUndefined();
+  expect(await page.getByRole("link", { name: "危險連結", exact: true }).getAttribute("href")).not.toMatch(/^javascript:/i);
+  await page.getByRole("button", { name: "完成思考，查看題解" }).click();
+  await expect(page.locator(".markdown code")).toContainText("SELECT 1");
+
+  await page.goto("/admin/question");
+  await page.getByRole("row").filter({ hasText: questionTitle }).getByRole("button", { name: "刪除", exact: true }).click();
+  await expect(page.getByRole("row").filter({ hasText: questionTitle })).toHaveCount(0);
+  expect((await page.request.get("/api/v1/questions/" + questionId)).status()).toBe(404);
+  await page.goto("/admin/questionBank");
+  bankRow = page.getByRole("row").filter({ hasText: bankTitle + " 更新" });
+  await bankRow.getByRole("button", { name: "刪除", exact: true }).click();
+  await expect(bankRow).toHaveCount(0);
+  expect((await page.request.get("/api/v1/banks/" + bankId)).status()).toBe(404);
+});

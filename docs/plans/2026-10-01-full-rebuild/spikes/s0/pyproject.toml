@@ -1,0 +1,11 @@
+[project]
+name = "mianshiya-s0-spike"
+version = "0.0.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "fastapi", "uvicorn", "httpx", "sqlalchemy[asyncio]>=2,<3", "psycopg[binary]>=3,<4",
+  "redis", "elasticsearch>=9,<10", "pytest",
+]
+
+[tool.uv]
+package = false

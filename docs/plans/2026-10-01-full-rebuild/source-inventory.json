@@ -1,0 +1,850 @@
+{
+  "revision": "4bd2893d01f4d9d6be7c4f75b194ccebcc0d3bd9",
+  "command": "python3 build_inventory.py <reference-checkout>",
+  "endpoints": [
+    {
+      "controller": "FileController",
+      "method": "POST",
+      "path": "/api/file/upload",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/FileController.java",
+      "line": 51,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "MockInterviewController",
+      "method": "POST",
+      "path": "/api/mockInterview/add",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java",
+      "line": 53,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "MockInterviewController",
+      "method": "POST",
+      "path": "/api/mockInterview/delete",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java",
+      "line": 70,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "MockInterviewController",
+      "method": "GET",
+      "path": "/api/mockInterview/get",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java",
+      "line": 97,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "MockInterviewController",
+      "method": "POST",
+      "path": "/api/mockInterview/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java",
+      "line": 113,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "MockInterviewController",
+      "method": "POST",
+      "path": "/api/mockInterview/my/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java",
+      "line": 135,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "MockInterviewController",
+      "method": "POST",
+      "path": "/api/mockInterview/handleEvent",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java",
+      "line": 166,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/add",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 60,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/delete",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 89,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/update",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 113,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "GET",
+      "path": "/api/post/get/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 141,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 159,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 176,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/my/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 195,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/search/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 221,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostController",
+      "method": "POST",
+      "path": "/api/post/edit",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java",
+      "line": 238,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostFavourController",
+      "method": "POST",
+      "path": "/api/post_favour",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostFavourController.java",
+      "line": 53,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostFavourController",
+      "method": "POST",
+      "path": "/api/post_favour/my/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostFavourController.java",
+      "line": 72,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostFavourController",
+      "method": "POST",
+      "path": "/api/post_favour/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostFavourController.java",
+      "line": 94,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "PostThumbController",
+      "method": "POST",
+      "path": "/api/post_thumb",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostThumbController.java",
+      "line": 43,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/add",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 67,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/delete",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 94,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/update",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 121,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "GET",
+      "path": "/api/questionBank/get/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 148,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 199,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 217,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/my/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 265,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankController",
+      "method": "POST",
+      "path": "/api/questionBank/edit",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java",
+      "line": 290,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S3",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/add",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 55,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/delete",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 82,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/update",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 108,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "GET",
+      "path": "/api/questionBankQuestion/get/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 135,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 151,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 169,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/my/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 190,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/remove",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 216,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/add/batch",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 241,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionBankQuestionController",
+      "method": "POST",
+      "path": "/api/questionBankQuestion/remove/batch",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java",
+      "line": 262,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/add",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 67,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/delete",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 98,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/update",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 125,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "GET",
+      "path": "/api/question/get/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 156,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 214,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 230,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/list/page/vo/sentinel",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 250,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S9",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/my/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 303,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/edit",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 328,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S4",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/search/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 360,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S7",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/delete/batch",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 374,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S5",
+      "decision": ""
+    },
+    {
+      "controller": "QuestionController",
+      "method": "POST",
+      "path": "/api/question/ai/generate/question",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java",
+      "line": 389,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S10",
+      "decision": ""
+    },
+    {
+      "controller": "TestSaTokenLoginController",
+      "method": "ANY",
+      "path": "/api/test/user/doLogin",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/TestSaTokenLoginController.java",
+      "line": 15,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "TestSaTokenLoginController",
+      "method": "ANY",
+      "path": "/api/test/user/isLogin",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/TestSaTokenLoginController.java",
+      "line": 26,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/register",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 60,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/login",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 82,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "GET",
+      "path": "/api/user/login/wx_open",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 99,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/logout",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 125,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "GET",
+      "path": "/api/user/get/login",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 140,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/add",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 157,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/delete",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 181,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/update",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 198,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/edit",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 219,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S6",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "GET",
+      "path": "/api/user/get",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 243,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "GET",
+      "path": "/api/user/get/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 261,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/list/page",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 275,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/list/page/vo",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 293,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S2",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/update/my",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 320,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S6",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "POST",
+      "path": "/api/user/add/sign_in",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 341,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S6",
+      "decision": ""
+    },
+    {
+      "controller": "UserController",
+      "method": "GET",
+      "path": "/api/user/get/sign_in",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java",
+      "line": 356,
+      "destination": "依產品能力重做；新 API 不要求同名",
+      "step": "S6",
+      "decision": ""
+    },
+    {
+      "controller": "WxMpController",
+      "method": "POST",
+      "path": "/api/",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/WxMpController.java",
+      "line": 42,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "WxMpController",
+      "method": "GET",
+      "path": "/api/",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/WxMpController.java",
+      "line": 82,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    },
+    {
+      "controller": "WxMpController",
+      "method": "GET",
+      "path": "/api/setMenu",
+      "source": "mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/WxMpController.java",
+      "line": 98,
+      "destination": "待 D1 確認",
+      "step": "S11",
+      "decision": "D1"
+    }
+  ],
+  "pages": [
+    {
+      "route": "/admin/bank",
+      "source": "mianshiya-next-frontend/src/app/admin/bank/page.tsx",
+      "destination": "重做",
+      "step": "S3"
+    },
+    {
+      "route": "/admin/question/ai",
+      "source": "mianshiya-next-frontend/src/app/admin/question/ai/page.tsx",
+      "destination": "重做",
+      "step": "S10"
+    },
+    {
+      "route": "/admin/question",
+      "source": "mianshiya-next-frontend/src/app/admin/question/page.tsx",
+      "destination": "重做",
+      "step": "S4"
+    },
+    {
+      "route": "/admin/user",
+      "source": "mianshiya-next-frontend/src/app/admin/user/page.tsx",
+      "destination": "重做",
+      "step": "S2"
+    },
+    {
+      "route": "/bank/[questionBankId]",
+      "source": "mianshiya-next-frontend/src/app/bank/[questionBankId]/page.tsx",
+      "destination": "重做",
+      "step": "S3"
+    },
+    {
+      "route": "/bank/[questionBankId]/question/[questionId]",
+      "source": "mianshiya-next-frontend/src/app/bank/[questionBankId]/question/[questionId]/page.tsx",
+      "destination": "重做",
+      "step": "S4"
+    },
+    {
+      "route": "/banks",
+      "source": "mianshiya-next-frontend/src/app/banks/page.tsx",
+      "destination": "重做",
+      "step": "S3"
+    },
+    {
+      "route": "/mockInterview/add",
+      "source": "mianshiya-next-frontend/src/app/mockInterview/add/page.tsx",
+      "destination": "重做",
+      "step": "S10"
+    },
+    {
+      "route": "/mockInterview/chat/[mockInterviewId]",
+      "source": "mianshiya-next-frontend/src/app/mockInterview/chat/[mockInterviewId]/page.tsx",
+      "destination": "重做",
+      "step": "S10"
+    },
+    {
+      "route": "/",
+      "source": "mianshiya-next-frontend/src/app/page.tsx",
+      "destination": "重做",
+      "step": "S3"
+    },
+    {
+      "route": "/question/[questionId]",
+      "source": "mianshiya-next-frontend/src/app/question/[questionId]/page.tsx",
+      "destination": "重做",
+      "step": "S4"
+    },
+    {
+      "route": "/questions",
+      "source": "mianshiya-next-frontend/src/app/questions/page.tsx",
+      "destination": "重做",
+      "step": "S7"
+    },
+    {
+      "route": "/user/center",
+      "source": "mianshiya-next-frontend/src/app/user/center/page.tsx",
+      "destination": "重做",
+      "step": "S6"
+    },
+    {
+      "route": "/user/login",
+      "source": "mianshiya-next-frontend/src/app/user/login/page.tsx",
+      "destination": "重做",
+      "step": "S2"
+    },
+    {
+      "route": "/user/register",
+      "source": "mianshiya-next-frontend/src/app/user/register/page.tsx",
+      "destination": "重做",
+      "step": "S2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "user",
+      "source": "mianshiya-next-backend/sql/create_table.sql",
+      "line": 12,
+      "destination": "新 schema，欄位與約束待 D2 確認",
+      "step": "S2",
+      "decision": "D2"
+    },
+    {
+      "name": "question_bank",
+      "source": "mianshiya-next-backend/sql/create_table.sql",
+      "line": 31,
+      "destination": "新 schema，欄位與約束待 D2 確認",
+      "step": "S3",
+      "decision": "D2"
+    },
+    {
+      "name": "question",
+      "source": "mianshiya-next-backend/sql/create_table.sql",
+      "line": 46,
+      "destination": "新 schema，欄位與約束待 D2 確認",
+      "step": "S4",
+      "decision": "D2"
+    },
+    {
+      "name": "question_bank_question",
+      "source": "mianshiya-next-backend/sql/create_table.sql",
+      "line": 63,
+      "destination": "新 schema，欄位與約束待 D2 確認",
+      "step": "S5",
+      "decision": "D2"
+    },
+    {
+      "name": "mock_interview",
+      "source": "mianshiya-next-backend/sql/create_table.sql",
+      "line": 84,
+      "destination": "新 schema，欄位與約束待 D2 確認",
+      "step": "S10",
+      "decision": "D2"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "scope": "actual API and worker processes with real local provider",
+  "provider": "local-openai-compatible",
+  "model": "qwen3:0.6b",
+  "paid_api_cost": 0,
+  "checks": {
+    "generation_exact_1_pending_review": true,
+    "generation_exact_20_pending_review": true,
+    "interview_start_and_replay": true,
+    "interview_chat_and_replay": true,
+    "interview_end_and_replay": true
+  },
+  "samples": {
+    "generation_1": [
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引會如何影響查詢效率。",
+        "answer": "在 PostgreSQL 中，索引會提高查詢效率，但會增加寫入成本。索引通常使用 B-tree 或 GIN 索引，索引的建立會影響表的大小和寫入速度。索引的使用需要考慮表的大小、查詢的頻率以及索引的設計。",
+        "tags": [
+          "PostgreSQL",
+          "索引",
+          "查詢效率"
+        ]
+      }
+    ],
+    "generation_20": [
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的資料庫設計原則。",
+        "answer": "資料庫設計原則包括：1. 封裝原則（Encapsulation）；2. 正则化原則（Regularization）；3. 資料完整性原則（Data Integrity）；4. 可靠性原則（Reliability）。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "資料庫設計"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的資料庫設計原則。",
+        "answer": "資料庫設計原則包括：1. 封裝原則（Encapsulation）；2. 正则化原則（Regularization）；3. 資料完整性原則（Data Integrity）；4. 可靠性原則（Reliability）。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "資料庫設計"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的資料庫設計原則。",
+        "answer": "資料庫設計原則包括：1. 封裝原則（Encapsulation）；2. 正则化原則（Regularization）；3. 資料完整性原則（Data Integrity）；4. 可靠性原則（Reliability）。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "資料庫設計"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的資料庫設計原則。",
+        "answer": "資料庫設計原則包括：1. 封裝原則（Encapsulation）；2. 正则化原則（Regularization）；3. 資料完整性原則（Data Integrity）；4. 可靠性原則（Reliability）。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "資料庫設計"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的資料庫設計原則。",
+        "answer": "資料庫設計原則包括：1. 封裝原則（Encapsulation）；2. 正则化原則（Regularization）；3. 資料完整性原則（Data Integrity）；4. 可靠性原則（Reliability）。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "資料庫設計"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的資料庫設計原則。",
+        "answer": "資料庫設計原則包括：1. 封裝原則（Encapsulation）；2. 正则化原則（Regularization）；3. 資料完整性原則（Data Integrity）；4. 可靠性原則（Reliability）。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "資料庫設計"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的索引如何提高查詢效率。",
+        "answer": "PostgreSQL 的索引可以提高查詢效率，主要通過以下方式實現：1. 使用全文索引 (Fulltext) 来加快模糊查詢；2. 使用 B-tree 索引来提高按值查詢的效率；3. 使用物性索引 (Spatial Index) 来加快空間查詢。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "索引"
+        ]
+      },
+      {
+        "title": "PostgreSQL 基礎",
+        "content": "請說明 PostgreSQL 中的多表查詢如何提高性能。",
+        "answer": "多表查詢時，可以使用 JOIN 操作，以减少重复操作，提高性能。此外，还可以使用子查詢、子表、子查询等技巧来优化查询效率。",
+        "tags": [
+          "PostgreSQL 基礎",
+          "多表查询"
+        ]
+      }
+    ],
+    "interview": [
+      {
+        "role": "user",
+        "content": "開始面試，先提出第一個問題。"
+      },
+      {
+        "role": "assistant",
+        "content": "首先，請問你目前的職位是什麼？如果是PostgreSQL初階工程師，那我們可以問一些與該職業相關的問題。"
+      },
+      {
+        "role": "user",
+        "content": "我會使用 transaction 與 UNIQUE constraint 保護資料一致性。"
+      },
+      {
+        "role": "assistant",
+        "content": "請問你目前的職位是什麼？如果是PostgreSQL初階工程師，那我們可以問一些與該職業相關的問題。"
+      },
+      {
+        "role": "user",
+        "content": "結束面試，提供評分、優點、待改善項目與練習建議。"
+      },
+      {
+        "role": "assistant",
+        "content": "恭喜你完成了面试！以下是评估的要点、改进点和练习建议：\n\n**評分與優點：**  \n- **優點：**  \n  - 你已掌握了 transaction 和 UNIQUE constraint 的核心概念，这是PostgreSQL初階工程師的基礎知識。  \n  - 你能够将这些概念应用到实际场景中，展现了良好的工程思维。\n\n**待改善項目：**  \n- 可以进一步优化 transaction 的使用场景，特别是在高并发或复杂事务处理时，确保事务的隔离性和一致性。\n- 可以加强对 UNIQUE constraint 的理解，特别是在数据库设计中如何平衡约束与性能。\n\n**練習建議：**  \n1. **練習1：**  \n   - 用 transaction 处理多筆操作，如插入、更新和删除，确保每一步都可见并正确执行。  \n   - 用 UNIQUE constraint 組建表，测试其约束效果。\n\n2. **練習2：**  \n   - 分析一个实际业务场景，设计表结构并验证 transaction 和 UNIQUE constraint 的正确性。\n\n如果你需要进一步练习或有其他问题，随时告诉我！"
+      }
+    ]
+  },
+  "postgresql_version": "180006",
+  "passed": true,
+  "elapsed_seconds": 165.389
+}

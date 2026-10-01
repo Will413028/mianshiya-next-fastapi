@@ -1,0 +1,22 @@
+[project]
+name = "mianshiya-api"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "fastapi", "uvicorn", "httpx", "sqlalchemy[asyncio]>=2,<3", "psycopg[binary]>=3,<4",
+  "redis", "elasticsearch[async]>=9,<10", "argon2-cffi", "alembic", "pytest", "pytest-asyncio",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["elasticsearch: requires and cleans a dedicated real Elasticsearch index"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.9",
+]

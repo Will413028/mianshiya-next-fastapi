@@ -1,0 +1,64 @@
+name: Product checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  product:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_DB: mianshiya
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports: ["55432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d mianshiya"
+          --health-interval 3s --health-timeout 2s --health-retries 60
+      redis:
+        image: redis:8-alpine
+        ports: ["56379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 3s --health-timeout 2s --health-retries 60
+      elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:9.5.4
+        env:
+          discovery.type: single-node
+          xpack.security.enabled: "false"
+          xpack.ml.enabled: "false"
+          ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+        ports: ["59200:9200"]
+        options: >-
+          --health-cmd "curl -fsS localhost:9200/_cluster/health?wait_for_status=yellow"
+          --health-interval 5s --health-timeout 5s --health-retries 60
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - uses: pnpm/action-setup@f520eceda224fe1a4aed5a2a27a194379a409996 # v6
+        with:
+          version: "11.2.2"
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: "0.7.2"
+          python-version: "3.13"
+      - run: make install
+      - run: make check
+      - run: make migrate
+      - run: make migrate
+      - run: make seed
+      - run: make test-db
+      - name: Real database, Redis and Elasticsearch integration
+        working-directory: apps/api
+        run: uv run --frozen pytest -q --junitxml=../../reports/api-ci.xml
+      - run: pnpm --dir apps/web exec playwright install --with-deps chromium
+      - run: pnpm --dir apps/web run build
+      - name: Actual production Next and API browser journeys
+        run: uv run --frozen --project apps/api python scripts/browser_runner.py

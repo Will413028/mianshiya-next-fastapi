@@ -1,0 +1,27 @@
+{
+  "provider": "local-openai-compatible",
+  "model": "qwen3:0.6b",
+  "checks": {
+    "interview_nonempty": true,
+    "generation_schema_exact_count": true
+  },
+  "samples": {
+    "interview": "當然可以！一個典型的 PostgreSQL transaction 面試問題可能是：\n\n**請說明 PostgreSQL 中 transaction 的基本功能，包括 commit 和 rollback 的用法。**  \n**回答範例：**  \nPostgreSQL 的 transaction 是一個資料庫的資料處理方式，允許你在資料修改前進行一次完整的資料清零操作。  \n- Commit 操作會將所有修改保存到資料庫，並重置資料的狀態。  \n- Rollback 操作會將資料回退到原始狀態，並重新設定資料的狀態。  \n你可以問這一个问题，並讓考生回答清楚 transaction 的基本概念和用法。",
+    "generation": {
+      "questions": [
+        {
+          "title": "PostgreSQL transaction 面試題",
+          "content": "請說明 PostgreSQL 中的 transaction 的作用及使用方式。",
+          "answer": "PostgreSQL 中的 transaction 用于確保資料的完整性與一致性。它允許在資料修改前進行數據校驗，並在資料修改後回滚操作。通常使用 COMMIT 或 ROLLBACK 操作來控制 transaction 的執行。",
+          "tags": [
+            "PostgreSQL",
+            "Transaction",
+            "Database",
+            "SQL",
+            "Database Management System"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/26.10.0_1/bin/node",
+      "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/apps/web/node_modules/.pnpm/@playwright+test@1.63.0/node_modules/@playwright/test/cli.js",
+      "test"
+    ],
+    "configFile": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/apps/web/playwright.config.ts",
+    "rootDir": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/apps/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../../reports/e2e.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "admin.spec.ts",
+      "file": "admin.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "管理員題庫／題目 CRUD、批次關聯、公開題解及 Markdown 安全",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13514,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-01T15:40:46.692Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4043a9dd1ab94463227-5d3d2f85b6ddf4b723be",
+          "file": "admin.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "journeys.spec.ts",
+      "file": "journeys.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "首頁、題庫、單題、Markdown 題解與響應式畫面",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 26068,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true })\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true })\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true })\u001b[22m\n\n    at /Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e/journeys.spec.ts:17:115",
+                    "location": {
+                      "file": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e/journeys.spec.ts",
+                      "column": 115,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   await page.getByRole(\"button\", { name: \"完成思考，查看題解\" }).click();\n  16 |   await expect(page.getByRole(\"heading\", { name: \"參考題解\" })).toBeVisible();\n> 17 |   await expect(page.getByRole(\"navigation\", { name: \"題庫題目導覽\" }).getByRole(\"link\", { name: title!, exact: true })).toBeVisible();\n     |                                                                                                                   ^\n  18 |   await page.screenshot({ path: \"../../reports/question-desktop.png\", fullPage: true });\n  19 |   await page.setViewportSize({ width: 390, height: 844 });\n  20 |   await page.screenshot({ path: \"../../reports/question-mobile.png\", fullPage: true });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e/journeys.spec.ts",
+                        "column": 115,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true })\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '題庫題目導覽' }).getByRole('link', { name: '為什麼 API 的 bigint ID 使用字串？', exact: true })\u001b[22m\n\n\n  15 |   await page.getByRole(\"button\", { name: \"完成思考，查看題解\" }).click();\n  16 |   await expect(page.getByRole(\"heading\", { name: \"參考題解\" })).toBeVisible();\n> 17 |   await expect(page.getByRole(\"navigation\", { name: \"題庫題目導覽\" }).getByRole(\"link\", { name: title!, exact: true })).toBeVisible();\n     |                                                                                                                   ^\n  18 |   await page.screenshot({ path: \"../../reports/question-desktop.png\", fullPage: true });\n  19 |   await page.setViewportSize({ width: 390, height: 844 });\n  20 |   await page.screenshot({ path: \"../../reports/question-mobile.png\", fullPage: true });\n    at /Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e/journeys.spec.ts:17:115"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-01T15:41:00.955Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/apps/web/test-results/journeys-首頁、題庫、單題、Markdown-題解與響應式畫面/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/will/second-brain/.projects/personal/mianshiya-next-fastapi/tests/e2e/journeys.spec.ts",
+                    "column": 115,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-8abcf0d92917fcc4be5a",
+          "file": "journeys.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "註冊、個人資料、閱讀活動、面試建立與登出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21562,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-01T15:42:01.199Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-bd1d4480716946bdf238",
+          "file": "journeys.spec.ts",
+          "line": 25,
+          "column": 5
+        },
+        {
+          "title": "SSR 登入 cookie 傳遞與使用者快取隔離",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-01T15:42:24.995Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-55d6530a792ca5a8a0f1",
+          "file": "journeys.spec.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "title": "個人資料載入前不可編輯，切換活動年份保留草稿",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-01T15:42:36.142Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-a875aae63ac251549586",
+          "file": "journeys.spec.ts",
+          "line": 82,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-01T15:40:45.917Z",
+    "duration": 113595.925,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

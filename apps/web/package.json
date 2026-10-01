@@ -1,0 +1,29 @@
+{
+  "name": "mianshiya-web",
+  "private": true,
+  "packageManager": "pnpm@11.2.2",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "generate": "openapi-typescript ../../packages/api-client/openapi.json -o ../../packages/api-client/schema.d.ts",
+    "format:check": "prettier --check app components next.config.ts playwright.config.ts"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "openapi-typescript": "^7.10.1",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.3"
+  }
+}

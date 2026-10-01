@@ -1,0 +1,1039 @@
+{
+  "revision": "4bd2893d01f4d9d6be7c4f75b194ccebcc0d3bd9",
+  "entries": [
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/FileController.java:51",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java:53",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "createInterview"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java:70",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "deleteInterview"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java:97",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "getInterview"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java:113",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "listInterviews"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java:135",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "listMyInterviews"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/MockInterviewController.java:166",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "handleInterviewEvent"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:60",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:89",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:113",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:141",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:159",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:176",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:195",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:221",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostController.java:238",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostFavourController.java:53",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostFavourController.java:72",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostFavourController.java:94",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/PostThumbController.java:43",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:67",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "createBank"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:94",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "deleteBank"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:121",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "updateBank"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:148",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "getBank"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:199",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listAdminBanks"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:217",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listBanks"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:265",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listMyBanks"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankController.java:290",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "updateBank"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:55",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "createRelation"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:82",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "deleteRelation"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:108",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "updateRelation"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:135",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "getRelation"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:151",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listRelations"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:169",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listPublicRelations"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:190",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listMyRelations"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:216",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "removeBankQuestion"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:241",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "addBankQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionBankQuestionController.java:262",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "removeBankQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:67",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "createQuestion"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:98",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "deleteQuestion"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:125",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "updateQuestion"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:156",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "getQuestion"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:214",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listAdminQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:230",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:250",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:303",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "listMyQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:328",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "updateQuestion"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:360",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/search.py",
+      "operation": "searchQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:374",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "batchDeleteQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/QuestionController.java:389",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "generateQuestions"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/TestSaTokenLoginController.java:15",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/TestSaTokenLoginController.java:26",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:60",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "register"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:82",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "login"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:99",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:125",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "logout"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:140",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "currentSession"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:157",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "createUser"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:181",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "deleteUser"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:198",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "updateUser"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:219",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "updateMyProfile"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:243",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "getUser"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:261",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "getPublicUser"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:275",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "listUsers"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:293",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "listPublicUsers"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:320",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "updateMyProfile"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:341",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "recordActivity"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/UserController.java:356",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "getActivity"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/WxMpController.java:42",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/WxMpController.java:82",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "endpoints:mianshiya-next-backend/src/main/java/com/yupi/mianshiya/controller/WxMpController.java:98",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/admin/bank/page.tsx:/admin/bank",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /admin/questionBank"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/admin/question/ai/page.tsx:/admin/question/ai",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /admin/question/ai"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/admin/question/page.tsx:/admin/question",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /admin/question"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/admin/user/page.tsx:/admin/user",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /admin/user"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/bank/[questionBankId]/page.tsx:/bank/[questionBankId]",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /bank/[questionBankId]"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/bank/[questionBankId]/question/[questionId]/page.tsx:/bank/[questionBankId]/question/[questionId]",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /bank/[questionBankId]/question/[questionId]"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/banks/page.tsx:/banks",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /banks"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/mockInterview/add/page.tsx:/mockInterview/add",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /mockInterview/add"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/mockInterview/chat/[mockInterviewId]/page.tsx:/mockInterview/chat/[mockInterviewId]",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /mockInterview/chat/[mockInterviewId]"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/page.tsx:/",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/question/[questionId]/page.tsx:/question/[questionId]",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /question/[questionId]"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/questions/page.tsx:/questions",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /questions"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/user/center/page.tsx:/user/center",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /user/center"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/user/login/page.tsx:/user/login",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /user/login"
+    },
+    {
+      "id": "pages:mianshiya-next-frontend/src/app/user/register/page.tsx:/user/register",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Workspace GET /user/register"
+    },
+    {
+      "id": "tables:mianshiya-next-backend/sql/create_table.sql:12",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/db.py",
+      "operation": "User"
+    },
+    {
+      "id": "tables:mianshiya-next-backend/sql/create_table.sql:31",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/db.py",
+      "operation": "Bank"
+    },
+    {
+      "id": "tables:mianshiya-next-backend/sql/create_table.sql:46",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/db.py",
+      "operation": "Question"
+    },
+    {
+      "id": "tables:mianshiya-next-backend/sql/create_table.sql:63",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/db.py",
+      "operation": "Relation"
+    },
+    {
+      "id": "tables:mianshiya-next-backend/sql/create_table.sql:84",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/db.py",
+      "operation": "Interview"
+    },
+    {
+      "id": "R01",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "register/login/currentSession/logout"
+    },
+    {
+      "id": "R02",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "createUser/listUsers/getUser/updateUser/deleteUser"
+    },
+    {
+      "id": "R03",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/auth.py",
+      "operation": "getMyProfile/updateMyProfile"
+    },
+    {
+      "id": "R04",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Home"
+    },
+    {
+      "id": "R05",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "banks CRUD/my/admin queries"
+    },
+    {
+      "id": "R06",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/web/components/workspace.tsx",
+      "operation": "Banks/BankDetail/getBankQuestionNavigation"
+    },
+    {
+      "id": "R07",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "questions CRUD/my/admin queries"
+    },
+    {
+      "id": "R08",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "bank-question-relations CRUD/my/admin queries"
+    },
+    {
+      "id": "R09",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "addBankQuestions/removeBankQuestions/batchDeleteQuestions"
+    },
+    {
+      "id": "R10",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/content.py",
+      "operation": "mark_activity/recordActivity/getActivity"
+    },
+    {
+      "id": "R11",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/search.py",
+      "operation": "searchQuestions"
+    },
+    {
+      "id": "R12",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/search.py",
+      "operation": "drain_outbox/rebuild_index"
+    },
+    {
+      "id": "R13",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/policies.py",
+      "operation": "cached_bank"
+    },
+    {
+      "id": "R14",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "R15",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/policies.py",
+      "operation": "guard_request/limit/policies; AI/search circuits"
+    },
+    {
+      "id": "R16",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/policies.py",
+      "operation": "policies/guard_request; security.Bloom"
+    },
+    {
+      "id": "R17",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/security.py",
+      "operation": "create_session/current_user/revoke_user"
+    },
+    {
+      "id": "R18",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/policies.py",
+      "operation": "guard_request crawl cooldown"
+    },
+    {
+      "id": "R19",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "generateQuestions/run_generation/getGenerationJob"
+    },
+    {
+      "id": "R20",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "handleInterviewEvent/completion"
+    },
+    {
+      "id": "R21",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "",
+      "target": "apps/api/mianshiya/ai.py",
+      "operation": "listMyInterviews/getInterview/deleteInterview/listInterviews"
+    },
+    {
+      "id": "R22",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "R23",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "R24",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "R25",
+      "status": "excluded",
+      "evidence": [
+        {
+          "decision": "docs/plans/2026-10-01-full-rebuild/decisions/2026-10-01-learning-rebuild.md"
+        }
+      ],
+      "reason": "D1=A：完整刷題與AI產品範圍；Post/微信/上傳外部整合/demo不納入，圖片URL保留。"
+    },
+    {
+      "id": "B01",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B02",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B03",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B04",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B05",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B06",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B07",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B08",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B09",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "id": "B10",
+      "status": "planned",
+      "evidence": [],
+      "reason": ""
+    }
+  ]
+}
